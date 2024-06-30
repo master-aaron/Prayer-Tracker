@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prayer Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Prayer Tracker</h1>
+      <div class="input-group">
+        <input
+          type="text"
+          id="prayerInput"
+          placeholder="Enter prayer request"
+          required
+        />
+        <select id="tagSelect">
+          <option value="General">General</option>
+          <option value="Health">Health</option>
+          <option value="Family">Family</option>
+          <option value="Work">Work</option>
+          <!-- Add more tags as needed -->
+        </select>
+        <button id="addButton">Add Prayer</button>
+      </div>
+      <ul id="prayerList"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
